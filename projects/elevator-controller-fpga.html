@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elevator Controller on a DE10-Lite FPGA — Michael Harrington</title>
+<meta name="description" content="Digital-logic elevator controller designed from truth tables and K-maps, minimized to the fewest gates, and run on an Intel DE10-Lite.">
+<meta name="theme-color" content="#0a0e13">
+<script>document.documentElement.classList.add("js")</script>
+<meta property="og:title" content="Elevator Controller on a DE10-Lite FPGA — Michael Harrington"><meta property="og:description" content="Digital-logic elevator controller designed from truth tables and K-maps, minimized to the fewest gates, and run on an Intel DE10-Lite."><meta property="og:type" content="website">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-grid" aria-hidden="true"></div><header class="nav" id="top"><div class="wrap nav-in">
+<a class="brand" href="../index.html"><span class="chiplogo" aria-hidden="true"><span>MH</span></span><span class="brand-name">Michael Harrington</span></a>
+<nav class="nav-links" id="navlinks" aria-label="Primary"><a href="../#projects">Projects</a><a href="../#experience">Experience</a><a href="../#skills">Skills</a><a href="../#education">Education</a><a href="../Michael_Harrington_Resume.pdf" target="_blank" rel="noopener">Resume</a><a class="btn btn-sm btn-primary" href="../#contact">Contact</a></nav>
+<button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span></button>
+</div></header>
+<main id="main" class="pmain">
+<div class="wrap">
+<a class="back" href="../#projects"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> All projects</a>
+<header class="phead">
+<p class="eyebrow mono">Dec 2024 </p>
+<h1>Elevator Controller on a DE10-Lite FPGA</h1>
+<p class="lead">Digital-logic elevator controller designed from truth tables and K-maps, minimized to the fewest gates, and run on an Intel DE10-Lite.</p>
+<dl class="meta">
+<div><dt class="mono">Role</dt><dd>Lead circuit designer</dd></div>
+<div><dt class="mono">Where</dt><dd>Digital Logic (ELEC 2275), Wentworth</dd></div>
+<div><dt class="mono">When</dt><dd>Dec 2024</dd></div>
+</dl>
+</header>
+<div class="phero card"><img src="https://static.wixstatic.com/media/1d69d5_cfe2825e50f34a88a8397be99b447380~mv2.jpg/v1/fill/w_1600,h_900,al_c,q_80,enc_auto/img.jpg" alt="Elevator Controller on a DE10-Lite FPGA" width="1600" height="900"></div>
+<div class="pgrid">
+<div class="pcontent">
+<section class="psec"><h2 class="h3">Overview</h2><p>An elevator controller built the way real digital design starts: define the behavior, write it as truth tables and a state diagram, minimize it, implement it, and prove it works for every input combination.</p></section>
+<section class="psec"><h2 class="h3">What I did</h2><ul class="checks"><li>Wrote the truth tables and state diagram, then simplified with Boolean algebra and Karnaugh maps to find the prime implicants.</li><li>Compared several circuit configurations and reduced each to its minimal form, checking every simplified expression against the original table.</li><li>Implemented the design in Intel Quartus and ran it on a DE10-Lite board.</li><li>Verified behavior with waveform simulation across all input combinations.</li></ul></section>
+
+<section class="psec"><h2 class="h3">Gallery</h2><div class="gallery"><figure class="gitem"><button class="gbtn" data-full="https://static.wixstatic.com/media/1d69d5_cfe2825e50f34a88a8397be99b447380~mv2.jpg/v1/fit/w_1800,h_1800,q_85,enc_auto/img.jpg" data-cap="DE10-Lite running the controller"><img src="https://static.wixstatic.com/media/1d69d5_cfe2825e50f34a88a8397be99b447380~mv2.jpg/v1/fill/w_700,h_500,al_c,q_80,enc_auto/img.jpg" alt="DE10-Lite running the controller" loading="lazy" width="700" height="500"></button><figcaption>DE10-Lite running the controller</figcaption></figure><figure class="gitem"><button class="gbtn" data-full="https://static.wixstatic.com/media/1d69d5_ca41c60e7c524334b1911aee0fbaa091~mv2.jpg/v1/fit/w_1800,h_1800,q_85,enc_auto/img.jpg" data-cap="System block diagram"><img src="https://static.wixstatic.com/media/1d69d5_ca41c60e7c524334b1911aee0fbaa091~mv2.jpg/v1/fill/w_700,h_500,al_c,q_80,enc_auto/img.jpg" alt="System block diagram" loading="lazy" width="700" height="500"></button><figcaption>System block diagram</figcaption></figure><figure class="gitem"><button class="gbtn" data-full="https://static.wixstatic.com/media/1d69d5_e2486a2bed884c1294772d6f0e3c801a~mv2.jpg/v1/fit/w_1800,h_1800,q_85,enc_auto/img.jpg" data-cap="Top-level block diagram"><img src="https://static.wixstatic.com/media/1d69d5_e2486a2bed884c1294772d6f0e3c801a~mv2.jpg/v1/fill/w_700,h_500,al_c,q_80,enc_auto/img.jpg" alt="Top-level block diagram" loading="lazy" width="700" height="500"></button><figcaption>Top-level block diagram</figcaption></figure><figure class="gitem"><button class="gbtn" data-full="https://static.wixstatic.com/media/1d69d5_e38af6a5357141d4921bdcadabf81bdd~mv2.jpg/v1/fit/w_1800,h_1800,q_85,enc_auto/img.jpg" data-cap="Elevator state diagram"><img src="https://static.wixstatic.com/media/1d69d5_e38af6a5357141d4921bdcadabf81bdd~mv2.jpg/v1/fill/w_700,h_500,al_c,q_80,enc_auto/img.jpg" alt="Elevator state diagram" loading="lazy" width="700" height="500"></button><figcaption>Elevator state diagram</figcaption></figure><figure class="gitem"><button class="gbtn" data-full="https://static.wixstatic.com/media/1d69d5_63daf43d53bd49a29cf0b3b64ac197f9~mv2.jpg/v1/fit/w_1800,h_1800,q_85,enc_auto/img.jpg" data-cap="K-map for the next-state equations"><img src="https://static.wixstatic.com/media/1d69d5_63daf43d53bd49a29cf0b3b64ac197f9~mv2.jpg/v1/fill/w_700,h_500,al_c,q_80,enc_auto/img.jpg" alt="K-map for the next-state equations" loading="lazy" width="700" height="500"></button><figcaption>K-map for the next-state equations</figcaption></figure><figure class="gitem"><button class="gbtn" data-full="https://static.wixstatic.com/media/1d69d5_76408bccaf764bb186d82db1dee8a2c2~mv2.jpg/v1/fit/w_1800,h_1800,q_85,enc_auto/img.jpg" data-cap="K-map for the output equations"><img src="https://static.wixstatic.com/media/1d69d5_76408bccaf764bb186d82db1dee8a2c2~mv2.jpg/v1/fill/w_700,h_500,al_c,q_80,enc_auto/img.jpg" alt="K-map for the output equations" loading="lazy" width="700" height="500"></button><figcaption>K-map for the output equations</figcaption></figure><figure class="gitem"><button class="gbtn" data-full="https://static.wixstatic.com/media/1d69d5_cc710789bc314234830f967be160b70a~mv2.jpg/v1/fit/w_1800,h_1800,q_85,enc_auto/img.jpg" data-cap="Simulation waveform"><img src="https://static.wixstatic.com/media/1d69d5_cc710789bc314234830f967be160b70a~mv2.jpg/v1/fill/w_700,h_500,al_c,q_80,enc_auto/img.jpg" alt="Simulation waveform" loading="lazy" width="700" height="500"></button><figcaption>Simulation waveform</figcaption></figure></div></section>
+</div>
+<aside class="pside"><div class="card sticky"><h2 class="h4 mono">Skills used</h2><ul class="chips"><li>FSM design</li><li>K-maps</li><li>Boolean minimization</li><li>Intel Quartus</li><li>DE10-Lite</li><li>Waveform simulation</li></ul>
+<a class="btn btn-primary btn-block" href="mailto:michaelh071805@gmail.com?subject=Elevator Controller on a DE10-Lite FPGA"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Ask me about this</a></div></aside>
+</div>
+<nav class="pnav" aria-label="More projects">
+<a class="card" href="../projects/interconnect-test-rig.html"><span class="mono muted small">← Previous</span><span>Interconnect Test Rig for BMS Boards</span></a>
+<a class="card right" href="../projects/nasa-herc-rover.html"><span class="mono muted small">Next →</span><span>NASA HERC 2027 Rover — Electrical Lead</span></a>
+</nav>
+</div>
+<div class="lightbox" id="lb" hidden><button class="lb-close" aria-label="Close">×</button><button class="lb-prev" aria-label="Previous">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="lb-next" aria-label="Next">›</button></div>
+</main><footer class="foot"><div class="wrap foot-in">
+<div><a class="brand" href="../index.html"><span class="chiplogo" aria-hidden="true"><span>MH</span></span><span class="brand-name">Michael Harrington</span></a>
+<p class="muted small">Electrical Engineering · Wentworth Institute of Technology</p></div>
+<div class="foot-links"><a href="../#projects">Projects</a><a href="../#experience">Experience</a><a href="../#skills">Skills</a><a href="mailto:michaelh071805@gmail.com">Email</a><a href="https://www.linkedin.com/in/michael-harrington-a1b354290/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/MichaelH1838" target="_blank" rel="noopener">GitHub</a><a href="../Michael_Harrington_Resume.pdf" target="_blank" rel="noopener">Resume</a></div>
+<p class="muted small mono">© <span id="yr">2026</span> Michael Harrington · hand-built in HTML/CSS</p>
+</div></footer>
+<script src="../assets/main.js" defer></script>
+</body></html>

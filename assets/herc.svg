@@ -1,0 +1,20 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rover electrical block diagram">
+<defs><pattern id="hgrid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1d2833" stroke-width="1"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#e8a54b"/></marker></defs>
+<rect width="800" height="500" fill="#0d131a"/><rect width="800" height="500" fill="url(#hgrid)"/>
+<g font-family="JetBrains Mono, monospace" font-size="15" text-anchor="middle">
+<g stroke="#e8a54b" stroke-width="2" fill="none" marker-end="url(#ar)">
+<path d="M150 120H245"/><path d="M355 120H445"/><path d="M500 145V205"/><path d="M445 230H355"/><path d="M555 230H625"/><path d="M500 255V315"/><path d="M300 255V315"/><path d="M555 340H625"/>
+</g>
+<g fill="#111a23" stroke="#3dd6a3" stroke-width="2">
+<rect x="40" y="95" width="110" height="50" rx="8"/><rect x="245" y="95" width="110" height="50" rx="8"/><rect x="445" y="95" width="110" height="50" rx="8"/>
+<rect x="445" y="205" width="110" height="50" rx="8"/><rect x="245" y="205" width="110" height="50" rx="8"/><rect x="625" y="205" width="135" height="50" rx="8"/>
+<rect x="445" y="315" width="110" height="50" rx="8"/><rect x="245" y="315" width="110" height="50" rx="8"/><rect x="625" y="315" width="135" height="50" rx="8"/>
+</g>
+<g fill="#e6edf3">
+<text x="95" y="126">3S LiPo</text><text x="300" y="126">40A fuse</text><text x="500" y="126">E-stop relay</text>
+<text x="500" y="236">Branch fuses</text><text x="300" y="236">6V servo buck</text><text x="692" y="236">Drive motors ×6</text>
+<text x="500" y="346">Arduino Mega</text><text x="300" y="346">4× steer servo</text><text x="692" y="346">Raspberry Pi 5</text>
+</g>
+<g fill="#6b7a89" font-size="14" text-anchor="start"><text x="40" y="440">// NASA HERC 2027 · RC division · power + control architecture</text></g>
+</g></svg>

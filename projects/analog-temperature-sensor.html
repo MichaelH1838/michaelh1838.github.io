@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Analog Temperature Sensor Front-End + PCB — Michael Harrington</title>
+<meta name="description" content="LM335 + OP07 signal-conditioning chain that maps 0–100 °C onto the full Arduino ADC range, calibrated with water-bath tests and finished as a custom PCB.">
+<meta name="theme-color" content="#0a0e13">
+<script>document.documentElement.classList.add("js")</script>
+<meta property="og:title" content="Analog Temperature Sensor Front-End + PCB — Michael Harrington"><meta property="og:description" content="LM335 + OP07 signal-conditioning chain that maps 0–100 °C onto the full Arduino ADC range, calibrated with water-bath tests and finished as a custom PCB."><meta property="og:type" content="website">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-grid" aria-hidden="true"></div><header class="nav" id="top"><div class="wrap nav-in">
+<a class="brand" href="../index.html"><span class="chiplogo" aria-hidden="true"><span>MH</span></span><span class="brand-name">Michael Harrington</span></a>
+<nav class="nav-links" id="navlinks" aria-label="Primary"><a href="../#projects">Projects</a><a href="../#experience">Experience</a><a href="../#skills">Skills</a><a href="../#education">Education</a><a href="../Michael_Harrington_Resume.pdf" target="_blank" rel="noopener">Resume</a><a class="btn btn-sm btn-primary" href="../#contact">Contact</a></nav>
+<button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span></button>
+</div></header>
+<main id="main" class="pmain">
+<div class="wrap">
+<a class="back" href="../#projects"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> All projects</a>
+<header class="phead">
+<p class="eyebrow mono">Oct 2025 </p>
+<h1>Analog Temperature Sensor Front-End + PCB</h1>
+<p class="lead">LM335 + OP07 signal-conditioning chain that maps 0–100 °C onto the full Arduino ADC range, calibrated with water-bath tests and finished as a custom PCB.</p>
+<dl class="meta">
+<div><dt class="mono">Role</dt><dd>Designer — circuit, calibration &amp; PCB</dd></div>
+<div><dt class="mono">Where</dt><dd>Wentworth Institute of Technology</dd></div>
+<div><dt class="mono">When</dt><dd>Oct 2025</dd></div>
+</dl>
+</header>
+<div class="phero card"><img src="https://static.wixstatic.com/media/1d69d5_37acfabc996b4a63b913b58f5a2ad780~mv2.jpg/v1/fill/w_1600,h_900,al_c,q_80,enc_auto/img.jpg" alt="Analog Temperature Sensor Front-End + PCB" width="1600" height="900"></div>
+<div class="pgrid">
+<div class="pcontent">
+<section class="psec"><h2 class="h3">Overview</h2><p>The LM335 only swings about 2.73 V to 3.73 V across 0–100 °C, which wastes most of a 0–5 V ADC. I designed an OP07-based analog interface with adjustable gain and offset that stretches that 1 V window across the converter&#x27;s full range.</p><p>The final readout reports temperature in Celsius and Fahrenheit.</p></section>
+<section class="psec"><h2 class="h3">What I did</h2><ul class="checks"><li>Chose the amplifier topology, calculated every resistor value and drew the schematic, adding trim pots for calibration.</li><li>Measured the Arduino&#x27;s real 5 V reference instead of trusting the nominal value.</li><li>Mapped the LM335&#x27;s voltage-to-temperature curve with water-bath tests, then recalculated gain and offset and recalibrated on the breadboard.</li><li>After validation, designed a custom PCB for the full sensor and signal-conditioning system, ready for fabrication.</li></ul></section>
+
+<section class="psec"><h2 class="h3">Gallery</h2><div class="gallery"><figure class="gitem"><button class="gbtn" data-full="https://static.wixstatic.com/media/1d69d5_37acfabc996b4a63b913b58f5a2ad780~mv2.jpg/v1/fit/w_1800,h_1800,q_85,enc_auto/img.jpg" data-cap="PCB layout and 3D model"><img src="https://static.wixstatic.com/media/1d69d5_37acfabc996b4a63b913b58f5a2ad780~mv2.jpg/v1/fill/w_700,h_500,al_c,q_80,enc_auto/img.jpg" alt="PCB layout and 3D model" loading="lazy" width="700" height="500"></button><figcaption>PCB layout and 3D model</figcaption></figure><figure class="gitem"><button class="gbtn" data-full="https://static.wixstatic.com/media/1d69d5_900fc70ba4cb4df786235c60530a4492~mv2.jpg/v1/fit/w_1800,h_1800,q_85,enc_auto/img.jpg" data-cap="Analog front-end on the bench"><img src="https://static.wixstatic.com/media/1d69d5_900fc70ba4cb4df786235c60530a4492~mv2.jpg/v1/fill/w_700,h_500,al_c,q_80,enc_auto/img.jpg" alt="Analog front-end on the bench" loading="lazy" width="700" height="500"></button><figcaption>Analog front-end on the bench</figcaption></figure><figure class="gitem"><button class="gbtn" data-full="https://static.wixstatic.com/media/1d69d5_51ecfeb9da814b508998f5f6a783696c~mv2.jpg/v1/fit/w_1800,h_1800,q_85,enc_auto/img.jpg" data-cap="Circuit model"><img src="https://static.wixstatic.com/media/1d69d5_51ecfeb9da814b508998f5f6a783696c~mv2.jpg/v1/fill/w_700,h_500,al_c,q_80,enc_auto/img.jpg" alt="Circuit model" loading="lazy" width="700" height="500"></button><figcaption>Circuit model</figcaption></figure></div></section>
+</div>
+<aside class="pside"><div class="card sticky"><h2 class="h4 mono">Skills used</h2><ul class="chips"><li>Op-amp design</li><li>OP07</li><li>LM335</li><li>Gain / offset calibration</li><li>KiCad</li><li>Arduino</li></ul>
+<a class="btn btn-primary btn-block" href="mailto:michaelh071805@gmail.com?subject=Analog Temperature Sensor Front-End + PCB"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Ask me about this</a></div></aside>
+</div>
+<nav class="pnav" aria-label="More projects">
+<a class="card" href="../projects/nasa-herc-rover.html"><span class="mono muted small">← Previous</span><span>NASA HERC 2027 Rover — Electrical Lead</span></a>
+<a class="card right" href="../projects/analog-noise-cancellation.html"><span class="mono muted small">Next →</span><span>Analog Active Noise-Cancellation Prototype</span></a>
+</nav>
+</div>
+<div class="lightbox" id="lb" hidden><button class="lb-close" aria-label="Close">×</button><button class="lb-prev" aria-label="Previous">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="lb-next" aria-label="Next">›</button></div>
+</main><footer class="foot"><div class="wrap foot-in">
+<div><a class="brand" href="../index.html"><span class="chiplogo" aria-hidden="true"><span>MH</span></span><span class="brand-name">Michael Harrington</span></a>
+<p class="muted small">Electrical Engineering · Wentworth Institute of Technology</p></div>
+<div class="foot-links"><a href="../#projects">Projects</a><a href="../#experience">Experience</a><a href="../#skills">Skills</a><a href="mailto:michaelh071805@gmail.com">Email</a><a href="https://www.linkedin.com/in/michael-harrington-a1b354290/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/MichaelH1838" target="_blank" rel="noopener">GitHub</a><a href="../Michael_Harrington_Resume.pdf" target="_blank" rel="noopener">Resume</a></div>
+<p class="muted small mono">© <span id="yr">2026</span> Michael Harrington · hand-built in HTML/CSS</p>
+</div></footer>
+<script src="../assets/main.js" defer></script>
+</body></html>
