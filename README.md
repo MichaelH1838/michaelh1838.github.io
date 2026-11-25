@@ -24,4 +24,4 @@ Hand-written HTML/CSS/JS, no framework. Hosted on GitHub Pages.
 
 ## Contact
 
-[michaelh071805@gmail.com](mailto:michaelh071805@gmail.com) · [LinkedIn](https://www.linkedin.com/in/michael-harrington-a1b354290/)
+[michaelh071805@gmail.com](mailto:michaelh071805@gmail.com) · [LinkedIn](https://www.linkedin.com/in/michaelharrington-ee/)
